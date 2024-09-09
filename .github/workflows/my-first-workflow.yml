@@ -22,8 +22,6 @@ jobs:
       run: echo "Hello, world!"
     
     - name: Run custom action
+      run: npm i @actions/core
       uses: nguyenthach4/Create_Custom_Actions/Node.JS_Version@main
-      uses: actions/setup-node@v3
-      with:
-        node-version: 16
-    - run: npm i @actions/core
+      
