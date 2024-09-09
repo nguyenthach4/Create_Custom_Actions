@@ -18,11 +18,13 @@ jobs:
       with:
         node-version: 20
 
-    - run: npm i @actions/core
+    - run: npm ci
+    - run: npm test
 
     - name: Print a message
       run: echo "Hello, world!"
     
     - name: Run custom action
+    - run: npm i @actions/core
       uses: nguyenthach4/Create_Custom_Actions/Node.JS_Version@main
       
